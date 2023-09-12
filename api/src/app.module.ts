@@ -4,6 +4,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { BooksModule } from './books/books.module';
+import HelloWorldModule from './hello/hello.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { BooksModule } from './books/books.module';
       playground: true,
       autoSchemaFile: 'schema.gql',
     }),
+    HelloWorldModule,
     BooksModule,
   ],
   controllers: [AppController],
