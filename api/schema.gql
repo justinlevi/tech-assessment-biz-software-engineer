@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type BookDTO {
+  id: String!
+  title: String!
+  author: String!
+}
+
+type Query {
+  getBooks: [BookDTO!]!
+}
+
+type Mutation {
+  createBook: Boolean!
+}
