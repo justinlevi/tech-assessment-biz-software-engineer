@@ -8,7 +8,7 @@ const HELLO_QUERY = gql`
 `;
 
 const HelloWorld = () => {
-  const { loading, error, data } = useQuery(HELLO_QUERY, { variables: { name: "World!" } });
+  const { loading, error, data } = useQuery(HELLO_QUERY, { variables: { name: "Justin" } });
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
